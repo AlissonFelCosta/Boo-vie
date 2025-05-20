@@ -2,13 +2,13 @@
 
 ## Project info
 
-<!-- ![GitHub Repo stars](https://img.shields.io/github/stars/AlissonFelCosta/ASCII-Art?style=social)
-![GitHub forks](https://img.shields.io/github/forks/AlissonFelCosta/ASCII-Art?style=social)
-![GitHub issues](https://img.shields.io/github/issues/AlissonFelCosta/ASCII-Art)
-![GitHub last commit](https://img.shields.io/github/last-commit/AlissonFelCosta/ASCII-Art)
-![GitHub language count](https://img.shields.io/github/languages/count/AlissonFelCosta/ASCII-Art) -->
+![GitHub Repo stars](https://img.shields.io/github/stars/AlissonFelCosta/Boo-vie?style=social)
+![GitHub forks](https://img.shields.io/github/forks/AlissonFelCosta/Boo-vie?style=social)
+![GitHub issues](https://img.shields.io/github/issues/AlissonFelCosta/Boo-vie)
+![GitHub last commit](https://img.shields.io/github/last-commit/AlissonFelCosta/Boo-vie)
+![GitHub language count](https://img.shields.io/github/languages/count/AlissonFelCosta/Boo-vie)
 
-<!-- ![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AlissonFelCosta&repo=ASCII-Art&theme=radical) -->
+![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AlissonFelCosta&repo=Boo-vie&theme=radical)
 
 
 **URL**: https://lovable.dev/projects/e8a1b340-084e-45a5-86f2-654388cf735c
