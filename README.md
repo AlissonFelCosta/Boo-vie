@@ -8,8 +8,11 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/AlissonFelCosta/Boo-vie)
 ![GitHub language count](https://img.shields.io/github/languages/count/AlissonFelCosta/Boo-vie)
 
-![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AlissonFelCosta&repo=Boo-vie&theme=radical)
+<br>
 
+![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AlissonFelCosta&repo=Boo-vie&theme=dark)
+
+<br>
 
 Boovie é uma plataforma social onde usuários podem recomendar livros e filmes uns aos outros com base em avaliações reais, comentários e curadorias. Nosso objetivo é criar uma comunidade onde boas histórias — escritas ou filmadas — encontrem quem mais vai apreciá-las.
 
