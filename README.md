@@ -10,10 +10,14 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/AlissonFelCosta/Boo-vie)
 ![GitHub repo size](https://img.shields.io/github/repo-size/AlissonFelCosta/Boo-vie)
 
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=flat)
+![React](https://img.shields.io/badge/React-20232a?logo=react&logoColor=61dafb&style=flat)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC?logo=tailwind-css&logoColor=white&style=flat)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=flat)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=white&style=flat)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white&style=flat)
 
-<br>
-
-![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AlissonFelCosta&repo=Boo-vie&theme=dark)
+<!-- ![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AlissonFelCosta&repo=Boo-vie&theme=dark) -->
 
 <br>
 
@@ -68,7 +72,6 @@ O Boovie utiliza o Supabase como BaaS para gerenciar:
 - 📄 Banco de dados Postgres com suporte a SQL em tempo real
 - 🔐 Autenticação segura via JWT e OAuth
 - 📂 Armazenamento de arquivos (capas, logos, etc)
-- 🔐 Autenticação via e-mail (login seguro com link mágico)
 
 
 A aplicação front-end está hospedada com Firebase, garantindo:
@@ -82,10 +85,17 @@ A aplicação front-end está hospedada com Firebase, garantindo:
 
 O Boovie foi testado com [Google PageSpeed Insights](https://pagespeed.web.dev/analysis/https-vlt-moviebook-1dee3-firebaseapp-com/ftvswvwp87):
 
-- ✅ **Performance**: 94/100
-- ✅ **Acessibilidade**: 98/100
-- ✅ **Boas práticas**: 100/100
-- ✅ **SEO**: 100/100
+💻 Desktop  
+🟩 Performance: ███████████████░ (96)  
+🟩 Acessibilidade: ███████████████░ (94)  
+🟩 Boas Práticas: ████████████████ (100)  
+🟦 SEO: ██████████████░ (92)
+
+📱 Mobile  
+🟧 Performance: ██████████░░░ (75)  
+🟩 Acessibilidade: ███████████████░ (94)  
+🟩 Boas Práticas: ████████████████ (100)  
+🟦 SEO: ██████████████░ (92)
 
 Esses resultados refletem a escolha de ferramentas modernas como Vite, React e Tailwind CSS otimizados.
 
