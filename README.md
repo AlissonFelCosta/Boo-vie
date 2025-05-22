@@ -4,9 +4,12 @@
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/AlissonFelCosta/Boo-vie?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/AlissonFelCosta/Boo-vie?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/AlissonFelCosta/Boo-vie?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/AlissonFelCosta/Boo-vie)
 ![GitHub last commit](https://img.shields.io/github/last-commit/AlissonFelCosta/Boo-vie)
 ![GitHub language count](https://img.shields.io/github/languages/count/AlissonFelCosta/Boo-vie)
+![GitHub repo size](https://img.shields.io/github/repo-size/AlissonFelCosta/Boo-vie)
+
 
 <br>
 
@@ -74,6 +77,20 @@ A aplicação front-end está hospedada com Firebase, garantindo:
 - Deploy contínuo com CI/CD via GitHub Actions
 
 ---
+
+## 📈 Desempenho
+
+O Boovie foi testado com [Google PageSpeed Insights](https://pagespeed.web.dev/analysis/https-vlt-moviebook-1dee3-firebaseapp-com/ftvswvwp87):
+
+- ✅ **Performance**: 94/100
+- ✅ **Acessibilidade**: 98/100
+- ✅ **Boas práticas**: 100/100
+- ✅ **SEO**: 100/100
+
+Esses resultados refletem a escolha de ferramentas modernas como Vite, React e Tailwind CSS otimizados.
+
+---
+
 
 ## 🛠️ Como rodar localmente
 
