@@ -20,6 +20,12 @@ Você pode **acessar o site sem login**, mas algumas ações como **avaliar** ou
 2. Escolha entre as abas **Entrar** ou **Cadastrar**
 3. Informe seu **e-mail** e **senha**
 
+![image](https://github.com/user-attachments/assets/0943de4d-9ac5-4ddf-b174-a96c4a9bac03)
+
+![image](https://github.com/user-attachments/assets/efa3df3d-1bde-4a51-a456-c36c9615d5ce)
+
+
+
 📩 Após o cadastro, um e-mail será enviado para confirmação.  
 Clique no botão **"Confirmar meu e-mail"**.
 
@@ -48,6 +54,9 @@ No canto esquerdo da tela está o menu lateral com os seguintes itens:
 No topo das abas **Filmes** e **Livros**, há um campo de busca.  
 Digite o nome de um filme ou livro para encontrar o que procura rapidamente.
 
+![image](https://github.com/user-attachments/assets/a690d9e8-a98d-4131-9ef0-50c7343bb7d4)
+
+
 ---
 
 ## ⭐ Avaliando Livros e Filmes
@@ -57,6 +66,9 @@ Digite o nome de um filme ou livro para encontrar o que procura rapidamente.
 3. Você verá a **descrição**, **avaliações de outros usuários**, e poderá:
    - ✨ Dar uma nota (de 1 a 5 estrelas)
    - 📝 Deixar um comentário
+  
+![image](https://github.com/user-attachments/assets/cd32e2a8-a374-4def-86d1-74a8f6693ed3)
+
 
 > Avaliações ajudam outros usuários a descobrirem bons conteúdos!
 
@@ -66,12 +78,18 @@ Digite o nome de um filme ou livro para encontrar o que procura rapidamente.
 
 Na aba **Feed**, você visualiza todas as avaliações feitas por outros usuários, em ordem cronológica (do mais recente para o mais antigo).
 
+![image](https://github.com/user-attachments/assets/ea577b60-a1d1-49f0-8810-320ce44f43f3)
+
+
 ---
 
 ## 💬 Usando o Chat
 
 Na aba **Chat** você pode iniciar conversas com outros usuários da plataforma.  
 Ideal para trocar opiniões, dicas e novas recomendações.
+
+![image](https://github.com/user-attachments/assets/79ad62b0-28c8-4182-ab34-b9dfdad217cd)
+
 
 ---
 
