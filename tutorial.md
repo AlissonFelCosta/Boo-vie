@@ -32,6 +32,9 @@ Você pode **acessar o site sem login**, mas algumas ações como **avaliar** ou
 📩 Após o cadastro, um e-mail será enviado para confirmação.  
 Clique no botão **"Confirmar meu e-mail"**.
 
+<!--![image](https://github.com/user-attachments/assets/91fde94e-a8a1-4ada-b776-b3b6580b499d)-->
+<img src="https://github.com/user-attachments/assets/91fde94e-a8a1-4ada-b776-b3b6580b499d" width="400" height="350">
+
 > O link abrirá uma página em branco. A partir daí, você já pode usar o Boovie.
 
 4. Volte para a aplicação, acesse a aba **Entrar**, informe seu e-mail e senha e aproveite!
