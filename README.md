@@ -25,11 +25,12 @@ Boovie é uma plataforma social onde usuários podem recomendar livros e filmes 
 
 ## 🌐 Acesse agora
 
-- [https://vlt-moviebook-1dee3.firebaseapp.com](https://vlt-moviebook-1dee3.firebaseapp.com)
-- [https://vlt-moviebook-1dee3.web.app](https://vlt-moviebook-1dee3.web.app)
-
 - [https://boo-vie.firebaseapp.com/](https://boo-vie.firebaseapp.com/)
- 
+- [https://boo-vie.web.app/](https://boo-vie.web.app/)
+
+<!--- [https://vlt-moviebook-1dee3.firebaseapp.com](https://vlt-moviebook-1dee3.firebaseapp.com)
+- [https://vlt-moviebook-1dee3.web.app](https://vlt-moviebook-1dee3.web.app)-->
+
 
 ---
 
@@ -86,19 +87,12 @@ A aplicação front-end está hospedada com Firebase, garantindo:
 
 ## 📈 Desempenho
 
-O Boovie foi testado com [Google PageSpeed Insights](https://pagespeed.web.dev/analysis/https-vlt-moviebook-1dee3-firebaseapp-com/ftvswvwp87):
+O Boovie foi testado com [Google PageSpeed Insights](https://pagespeed.web.dev/analysis/https-boo-vie-firebaseapp-com/1buukue53x):
 
-💻 Desktop  
-🟩 Performance: ███████████████░ (96)  
-🟩 Acessibilidade: ███████████████░ (94)  
-🟩 Boas Práticas: ████████████████ (100)  
-🟦 SEO: ██████████████░ (92)
-
-📱 Mobile  
-🟧 Performance: ██████████░░░ (75)  
-🟩 Acessibilidade: ███████████████░ (94)  
-🟩 Boas Práticas: ████████████████ (100)  
-🟦 SEO: ██████████████░ (92)
+| Plataforma | Desempenho | Acessibilidade | Práticas Recomendadas | SEO |
+|------------|-------------|----------------|------------------------|-----|
+| 💻 **Desktop** | 🟩 **100** | 🟩 **96** | 🟩 **100** | 🟩 **100** |
+| 📱 **Mobile**  | 🟩 **92**  | 🟩 **96** | 🟩 **100** | 🟩 **100** |
 
 Esses resultados refletem a escolha de ferramentas modernas como Vite, React e Tailwind CSS otimizados.
 
