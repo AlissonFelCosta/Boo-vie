@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boovie - Descubra filmes e livros incríveis</title>
+    <meta name="description" content="Descubra as melhores recomendações de filmes e livros personalizadas para você. Conecte-se com outros apaixonados por entretenimento." />
+    <meta name="author" content="Boovie" />
+    <meta name="theme-color" content="#2A6B6B" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Boovie - Descubra filmes e livros incríveis" />
+    <meta property="og:description" content="Descubra as melhores recomendações de filmes e livros personalizadas para você." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://atxtojnnwookypaqapvx.supabase.co/storage/v1/object/public/src//poengraph.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Boovie" />
+    <meta name="twitter:image" content="https://atxtojnnwookypaqapvx.supabase.co/storage/v1/object/public/src//poengraph.png" />
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://image.tmdb.org" crossorigin />
+    <link rel="preconnect" href="https://books.google.com" crossorigin />
+    <link rel="dns-prefetch" href="https://atxtojnnwookypaqapvx.supabase.co" />
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="/src/index.css" as="style" />
+    
+    <!-- Preload critical image -->
+    <link rel="preload" as="image" href="https://image.tmdb.org/t/p/w500/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg" fetchpriority="high" />
+    
+    <!-- Cache-Control hints -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8517743765201970" crossorigin="anonymous"></script> -->
+  </body>
+</html>

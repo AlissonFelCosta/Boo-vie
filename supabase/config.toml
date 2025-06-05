@@ -1,0 +1,9 @@
+
+# This is the projects configuration file.
+project_id = "atxtojnnwookypaqapvx"
+
+[postgres_config]
+# Enable PostgreSQL logical replication
+max_replication_slots = 10
+max_wal_senders = 10
+wal_level = "logical"
