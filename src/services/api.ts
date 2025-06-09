@@ -1,4 +1,3 @@
-
 // Movie API - using TMDB API
 export const fetchMovies = async (query?: string, page: number = 1, genreId?: string) => {
   const BASE_URL = "https://api.themoviedb.org/3";
@@ -91,13 +90,18 @@ export const fetchBooks = async (query?: string, page: number = 1, subject?: str
       const book = await response.json();
       console.log("Book API response:", book);
       
+      // Clean HTML tags from description
+      const cleanDescription = book.volumeInfo.description 
+        ? stripHtmlTags(book.volumeInfo.description)
+        : "No description available";
+      
       return {
         results: [{
           id: book.id,
           title: book.volumeInfo.title,
           image: book.volumeInfo.imageLinks?.thumbnail || '/placeholder.svg',
           releaseDate: book.volumeInfo.publishedDate,
-          description: book.volumeInfo.description || "No description available",
+          description: cleanDescription,
           authors: book.volumeInfo.authors || ["Unknown Author"],
           type: 'book'
         }],
@@ -136,15 +140,22 @@ export const fetchBooks = async (query?: string, page: number = 1, subject?: str
     const totalPages = Math.ceil((data.totalItems || 0) / 10);
     
     return {
-      results: filteredItems.map((book: any) => ({
-        id: book.id,
-        title: book.volumeInfo.title,
-        image: book.volumeInfo.imageLinks?.thumbnail || '/placeholder.svg',
-        releaseDate: book.volumeInfo.publishedDate,
-        description: book.volumeInfo.description || "No description available",
-        authors: book.volumeInfo.authors || ["Unknown Author"],
-        type: 'book'
-      })),
+      results: filteredItems.map((book: any) => {
+        // Clean HTML tags from description
+        const cleanDescription = book.volumeInfo.description 
+          ? stripHtmlTags(book.volumeInfo.description)
+          : "No description available";
+          
+        return {
+          id: book.id,
+          title: book.volumeInfo.title,
+          image: book.volumeInfo.imageLinks?.thumbnail || '/placeholder.svg',
+          releaseDate: book.volumeInfo.publishedDate,
+          description: cleanDescription,
+          authors: book.volumeInfo.authors || ["Unknown Author"],
+          type: 'book'
+        };
+      }),
       totalPages: totalPages,
       currentPage: page
     };
@@ -157,6 +168,9 @@ export const fetchBooks = async (query?: string, page: number = 1, subject?: str
     };
   }
 };
+
+// Import the HTML utility function at the top
+import { stripHtmlTags } from "@/utils/htmlUtils";
 
 // Game API - using RAWG API
 export const fetchGames = async (query?: string, page: number = 1) => {
