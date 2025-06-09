@@ -28,6 +28,9 @@ Boovie é uma plataforma social onde usuários podem recomendar livros e filmes 
 - [https://boo-vie.firebaseapp.com/](https://boo-vie.firebaseapp.com/)
 - [https://boo-vie.web.app/](https://boo-vie.web.app/)
 
+
+![image](https://github.com/user-attachments/assets/ca72a221-a249-458b-9213-c3e68a583d56)
+
 <!--- [https://vlt-moviebook-1dee3.firebaseapp.com](https://vlt-moviebook-1dee3.firebaseapp.com)
 - [https://vlt-moviebook-1dee3.web.app](https://vlt-moviebook-1dee3.web.app)-->
 
