@@ -21,6 +21,7 @@ import ContactPage from "./pages/ContactPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsPage from "./pages/TermsPage";
 import RecommendationsPage from "./pages/RecommendationsPage";
+import EmailConfirmationPage from "./pages/EmailConfirmationPage";
 
 const queryClient = new QueryClient();
 
@@ -67,6 +68,7 @@ const AppRoutes = () => (
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/privacy" element={<PrivacyPolicyPage />} />
       <Route path="/terms" element={<TermsPage />} />
+      <Route path="/email-confirmation" element={<EmailConfirmationPage />} />
       <Route path="/recommendations" element={
         <ProtectedRoute>
           <RecommendationsPage />
