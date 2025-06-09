@@ -128,25 +128,39 @@ export default function ChatConversation({ otherUser, onMessagesRead, onBack }: 
     if (!otherUser.is_bot && currentUser?.id) {
       console.log(`Setting up real-time subscription for conversation with ${otherUser.id}`);
       
+      const channelName = `conversation:${currentUser.id}:${otherUser.id}`;
+      
       const channel = supabase
-        .channel(`conversation-${currentUser.id}-${otherUser.id}`)
+        .channel(channelName)
         .on('postgres_changes', 
           {
             event: 'INSERT',
             schema: 'public',
-            table: 'private_messages',
-            filter: `or(and(sender_id.eq.${currentUser.id},receiver_id.eq.${otherUser.id}),and(sender_id.eq.${otherUser.id},receiver_id.eq.${currentUser.id}))`
+            table: 'private_messages'
           }, 
           (payload) => {
-            console.log('Real-time message received:', payload);
+            console.log('Real-time INSERT received:', payload);
             const newMessage = payload.new as Message;
+            
+            // Only process messages relevant to this conversation
+            const isRelevantMessage = (
+              (newMessage.sender_id === currentUser.id && newMessage.receiver_id === otherUser.id) ||
+              (newMessage.sender_id === otherUser.id && newMessage.receiver_id === currentUser.id)
+            );
+            
+            if (!isRelevantMessage) {
+              console.log('Message not relevant to this conversation, ignoring');
+              return;
+            }
             
             setMessages(currentMessages => {
               // Check if message already exists
               if (currentMessages.some(msg => msg.id === newMessage.id)) {
+                console.log('Message already exists, skipping');
                 return currentMessages;
               }
               
+              console.log('Adding new message to conversation');
               setHasNewMessage(true);
               
               // If it's from the other user, mark it as read automatically
@@ -173,12 +187,21 @@ export default function ChatConversation({ otherUser, onMessagesRead, onBack }: 
           {
             event: 'UPDATE',
             schema: 'public',
-            table: 'private_messages',
-            filter: `or(and(sender_id.eq.${currentUser.id},receiver_id.eq.${otherUser.id}),and(sender_id.eq.${otherUser.id},receiver_id.eq.${currentUser.id}))`
+            table: 'private_messages'
           },
           (payload) => {
-            console.log('Real-time message updated:', payload);
+            console.log('Real-time UPDATE received:', payload);
             const updatedMessage = payload.new as Message;
+            
+            // Only process messages relevant to this conversation
+            const isRelevantMessage = (
+              (updatedMessage.sender_id === currentUser.id && updatedMessage.receiver_id === otherUser.id) ||
+              (updatedMessage.sender_id === otherUser.id && updatedMessage.receiver_id === currentUser.id)
+            );
+            
+            if (!isRelevantMessage) {
+              return;
+            }
             
             setMessages(currentMessages => 
               currentMessages.map(msg => 
@@ -188,7 +211,7 @@ export default function ChatConversation({ otherUser, onMessagesRead, onBack }: 
           }
         )
         .subscribe((status) => {
-          console.log(`Real-time subscription status:`, status);
+          console.log(`Real-time subscription status for ${channelName}:`, status);
           if (status === 'SUBSCRIBED') {
             console.log('Successfully subscribed to real-time updates');
           } else if (status === 'CHANNEL_ERROR') {
@@ -318,13 +341,16 @@ export default function ChatConversation({ otherUser, onMessagesRead, onBack }: 
 
     // Normal conversation with real user
     try {
-      const { error: sendError } = await supabase
+      console.log("Sending message to database...");
+      const { data, error: sendError } = await supabase
         .from("private_messages")
         .insert({
           sender_id: currentUser.id,
           receiver_id: otherUser.id,
           content: filteredMessage,
-        });
+        })
+        .select()
+        .single();
       
       if (sendError) {
         console.error("Error sending message:", sendError);
@@ -335,9 +361,9 @@ export default function ChatConversation({ otherUser, onMessagesRead, onBack }: 
           variant: "destructive",
         });
       } else {
-        console.log("Message sent successfully");
+        console.log("Message sent successfully:", data);
         setNewMsg("");
-        // Real-time subscription will handle adding the message
+        // Real-time subscription will handle adding the message to the UI
       }
     } catch (e) {
       console.error("Exception sending message:", e);
